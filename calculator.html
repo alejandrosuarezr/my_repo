@@ -5,6 +5,14 @@ function cube() {
 var num = document.getElementById("n1");
 num.value = Math.pow(num.value, 3);
 }
+function square(){
+	var num = document.getElementById("n1");
+	num.value = num.value * num.value;
+}
+function sinx(){
+	var num = document.getElementById("n1");
+	num.value = Math.sinx(num.value);
+}
 </script>
 </head>
 <body>
@@ -12,6 +20,10 @@ num.value = Math.pow(num.value, 3);
 Number:
 <input type="text" id="n1"><p>
 <button onclick="cube()"> x^3 </button>
-<button onclick="cube()"> sin(x) </button>
+
+<button onclick="sinx()"> sin(x) </button>
+
+<button onclick="square()"> x^2 </button>
+
 </body>
 </html>
